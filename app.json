@@ -20,10 +20,20 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.shiv8535.SkillSwap"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "resolutions": {
+      "react-native-safe-area-context": "5.4.0"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "615cda22-fc8b-459a-b2f1-21dccf586f15"
+      }
+    },
+    "owner": "shiv8535"
   }
 }
