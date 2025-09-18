@@ -4,10 +4,10 @@ import { auth, db } from "../config/firebase";
 import { collection, onSnapshot, query, where, orderBy, doc, getDoc } from "firebase/firestore";
 import EmptyState from "../components/EmptyState";
 
-// 🔹 Cache to prevent unnecessary re-fetch
+// Cache to prevent unnecessary re-fetch
 const userCache = {};
 
-// 🔹 Single chat item without image
+// Single chat item without image
 const ListItem = React.memo(function ListItem({ item, navigation }) {
   const otherId = item.participants.find((p) => p !== auth.currentUser.uid);
 
