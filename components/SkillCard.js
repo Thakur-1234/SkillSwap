@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 
-// 🟢 SkillCard shows one skill (offer/request) with details & button
+// SkillCard shows one skill (offer/request) with details & button
 export default function SkillCard({ item, onRespond }) {
-  // ✅ Decide image source (Base64 or URI)
+  // Decide image source (Base64 or URI)
   let imageSource = null;
   if (item.imageBase64) {
     imageSource = { uri: "data:image/jpeg;base64," + item.imageBase64 };
